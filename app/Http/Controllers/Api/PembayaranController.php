@@ -66,6 +66,22 @@ class PembayaranController extends Controller
                     "logo_bank" => "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5c/Bank_Central_Asia.svg/1280px-Bank_Central_Asia.svg.png",
                     "nama_rekening" => "PT Altrusights",
                     "no_rekening" => "1122334455"
+                ),
+                "kos" => array(
+                    "aturan" => "# Aturan Kos\n\n1. Jangan telat bayar kos\n2. Jangan numpuk sampah di kamar, bau woi!\n3. Jangan lupa ibadah, hanya karna jauh dari rumah, enak aja bolos ibadah\n4. Cari kerja yang bener, biar berguna, ga jadi beban terus. Yang kuliah, tolong kuliah yang bener, jangan suka bolos kelas, apalagi titip absen. Ingat, ortu bayar mahal!\n5. Jangan pakai paylater, kita ga mau ada debt collector ke kos, merusak citra kos!\n6. Kalo baliknya malam banget, kabarin ke pengelola kos. Jangan keluar seenak jidat!",
+                    "alamat" => "Jl. Maju Mundur Tabrak Tiang, Gg Ikhlasin Aja, No 01",
+                    "pengelola" => [
+                        [
+                            "nama" => "Asri",
+                            "whatsapp" => "081234567890",
+                            "email" => "asri@example.net"
+                        ],
+                        [
+                            "nama" => "Isra",
+                            "whatsapp" => "089876543210",
+                            "email" => "isra@example.net",
+                        ]
+                    ]
                 )
             );
             $code = 200;
