@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\Api\AuthController;
+use App\Http\Controllers\Api\KomplainController;
 use App\Http\Controllers\Api\PembayaranController;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
@@ -32,6 +33,11 @@ Route::middleware('auth:sanctum')->group(function () {
         Route::prefix('pembayaran')->group(function () {
             Route::get('/', [PembayaranController::class, 'index']);
             Route::get('/dataQris', [PembayaranController::class, 'fetchPembayaran']);
+        });
+
+        Route::prefix('komplain')->group(function () {
+            Route::get('/', [KomplainController::class, 'index']);
+            Route::post('/store', [KomplainController::class, 'store']);
         });
     });
 });
